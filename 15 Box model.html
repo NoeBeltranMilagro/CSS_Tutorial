@@ -1,0 +1,48 @@
+<!-- La "box model" (la "caja" que rodea el contenido) se compone del "content" (el contenido dentro del cuadro), el "padding" (el relleno que hay entre el contenido y el borde de la caja), el "border" (el borde de la caja) y el "margin" (el apartado restante de caja. Éste es invisible y lo crea el propio navegador). Se pueden crear y editar varias box model para rodear el contenido. -->
+<!-- La property "padding" nos permite ajustar el tamaño del relleno. -->
+<!-- La property "border-color" nos permite colorear el borde. -->
+<!-- La property "border-width" nos permite ajustar el tamaño del borde. -->
+<!-- La property "border-style" nos permite ajustar el estilo del borde. SI NO LO PONEMOS EN SOLID, EL BORDE NO APARECERÁ. -->
+<!-- La property "margin" nos permite ajustar el tamaño del margen en todos los lados del contenido. -->
+<!-- La property "margin-right" nos permite ajustar el tamaño del margen de la derecha. -->
+<!-- La property "margin-left" nos permite ajustar el tamaño del margen la izquierda. -->
+<!-- La property "margin-top" nos permite ajustar el tamaño del margen de arriba. -->
+<!-- La property "margin-bottom" nos permite ajustar el tamaño del margen de abajo. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		p.paragraph1 {
+			background-color: gold;
+			font-size: 24px;
+			padding: 20px;
+			border-color: black;
+			border-width: 6px;
+			border-style: solid;
+			margin: 30px;
+			margin-left: 20px;
+			margin-right: 10px;
+			margin-top: 40px;
+			margin-bottom: 80px;
+		}
+		p.paragraph2 {
+			background-color: gold;
+			font-size: 24px;
+			padding: 20px;
+			border-color: black;
+			border-width: 6px;
+			border-style: solid;
+			margin: 20px;
+			margin-left: 80px;
+			margin-right: 30px;
+			margin-top: 100px;
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="paragraph1"> En este texto, si le ponemos un color de fondo, podremos ver la caja que rodea a éste. </p>
+	<p class="paragraph2"> Como ves, podemos ajustar el margen para acercar o alejar ambos textos entre sí. </p>
+</body>
+</html>

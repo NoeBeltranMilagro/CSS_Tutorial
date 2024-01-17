@@ -1,0 +1,47 @@
+<!-- La property "font-family" sirve para cambiar el estilo de la letra. Se pueden poner varios estilos en una misma rule. El caso de que no funcione el primero, aparecerá el segundo, etc. Es recomendable, ya que en algún ordenador podría no aparecer el estilo de letra que querías en tu página web. La forma de solucionarlo es poner varios estilos que puedan sustituir a tu favorito. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+				color: black;
+				font-family: verdana, arial, geneva, arial black;
+		}
+
+		h1 {
+			border-bottom: 1px solid black;	
+		}
+
+		h2 {
+			border: 1px solid black;
+		}
+
+		.skyblue {
+			color: skyblue;
+			font-size: 25px;
+		}		
+
+		.underline {
+			text-decoration: underline;
+		}		
+
+		p.gold {
+			color: gold;
+			font-size: 25px;
+		}		
+
+	</style>
+
+	<title> My HTML web page </title>
+</head>
+
+<body>
+	<h1> HTML web page </h1>
+	<p class="skyblue underline"> This is a HTML web page. </p>
+	<blockquote class="skyblue underline"> Firmado por: Su Grasienta Majestad, Gordo Ivano XII </blockquote>
+	<h2> Stuff about HTML </h2>
+	<p class="gold"> HTML is all about web pages. </p>
+</body>
+
+</html>

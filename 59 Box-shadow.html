@@ -1,0 +1,35 @@
+<!-- La property "box shadow" sirve para ponerle sombra a una box model o recuadro.-->
+<!-- Utiliza los mismos elementos que la property "text-shadow", además de otro value para extender o retraer la sombra (este nuevo value sirve para que la sombra ocupe más o menos espacio del box model. Es como si sirviera para "alejar" o "acercar" la sombra del recuadro). -->
+<!-- También podemos utilizar el value "inset" que sirve para poner la sombra alrededor del recuadro, como ocurre en el box2. En caso de utilizar el inset, no especificamos la longitud y la altura, ya que, de esta forma, el sombreado no quedaría alrededor del box model. Debemos dejar siempre esos dos valores en 0px. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#box1 {
+			width: 600px;
+			height: 200px;
+			background-color: orange;
+			box-shadow: 15px 15px 5px 7px green;
+		}
+
+		#box2 {
+			width: 600px;
+			height: 200px;
+			background-color: orange;
+			box-shadow: inset 0px 0px 30px black;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="box1">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="box2">
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- La property "background: linear-gradient" sirve para "degradar" y posicionar colores en un fondo. -->
+<!-- En todos los box hemos puesto un background de color skyblue, para que, en caso de que el linear-gradient no sea compatible con el nagevador del usuario, éste sea sustituido por el primer background (utilizamos el primer background como un fallback). -->
+<!-- Los colores que utilizamos en este property sin especificar la posición irían de arriba a abajo de forma predeterminada, como ocurre en box1. Para cambiar la posición, tendremos que definir hacia dónde mediante lados, grados, etc. -->
+<!-- En el caso de box4, el 80% se refiere al PORCENTAJE QUE OCUPA DEL FONDO, en este caso el color brown. -->
+<!-- Para quitar el sangrado, podemos, simplemente, poner los colores a un porcentaje igualitario (como ocurre en box 5). -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.box1 {
+			width: 400px;
+			height: 300px;
+			background: skyblue;
+			background: linear-gradient(brown, gold);
+		}
+
+		.box2 {
+			width: 400px;
+			height: 300px;
+			background: skyblue;
+			background: linear-gradient(to right, brown, gold);
+		}
+
+		.box3 {
+			width: 400px;
+			height: 300px;
+			background: skyblue;
+			background: linear-gradient(60deg, brown, gold);
+		}
+
+		.box4 {
+			width: 400px;
+			height: 300px;
+			background: skyblue;
+			background: linear-gradient(brown 80%, gold);
+		}
+
+		.box5 {
+			width: 400px;
+			height: 300px;
+			background: skyblue;
+			background: linear-gradient(brown 50%, gold 50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+	</div>
+	<br>
+	<div class="box2">
+	</div>
+	<br>
+	<div class="box3">
+	</div>
+	<br>
+	<div class="box4">
+	</div>
+	<br>
+	<div class="box5">
+	</div>
+</body>
+</html>

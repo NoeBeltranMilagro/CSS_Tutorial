@@ -1,0 +1,91 @@
+<!-- El "atribute selector" sirve para seleccionar atributos. -->
+<!-- En el caso de este selector, podemos seleccionar los "values" dentro del atributo. Ocurre de la misma forma con los "class" o los "id" dentro de un tag. -->
+<!-- También podemos seleccionar values que EMPIECEN en el value indicado. Para ello, utilizamos el ^. -->
+<!-- También podemos seleccionar values que TERMINEN en el value indicado. Para ello, utilzamos el $. -->
+<!-- Por último, podemos seleccionar values que estén EN CUALQUIER LUGAR dentro del value indicado. Para ello, utilzamos el *. -->
+<!-- El atribute "lang" sirve para cambiar el lenguaje. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		p[lang] {
+			color: skyblue;	
+		}
+
+		label[for] {
+			color: gold;
+		}
+
+		label[for="Second Name"] {
+			color: green;
+		}
+
+		p[lang^="ja"] {
+			color: brown;	
+		}
+
+		p[lang$="o"] {
+			color: magenta;	
+		}
+
+		p[lang~="en"] {
+			color: purple;	
+		}
+	</style>
+</head>
+
+<body>
+	<p lang="en">Introduce your information</p>
+	
+	<form>
+		<label for="First Name">Nombre:</label>
+		<input type="text" name="" size="40">
+		<br>
+		<br>
+		<label for="Second Name">Apellido:</label>
+		<input type="text" name="" size="40">
+	</form>
+	<br>
+	<br>
+
+	<p lang="ja en">Introduce your information, again</p>
+
+	<form>
+		<label for="First Name">Nombre:</label>
+		<input type="text" name="" size="40">
+		<br>
+		<br>
+		<label for="Second Name">Apellido:</label>
+		<input type="text" name="" size="40">
+	</form>
+	<br>
+	<br>
+
+	<p lang="en ko">Again, please</p>
+
+	<form>
+		<label for="First Name">Nombre:</label>
+		<input type="text" name="" size="40">
+		<br>
+		<br>
+		<label for="Second Name">Apellido:</label>
+		<input type="text" name="" size="40">
+	</form>
+	<br>
+	<br>
+	
+	<p lang="ja ko en">One last time</p>
+
+	<form>
+		<label for="First Name">Nombre:</label>
+		<input type="text" name="" size="40">
+		<br>
+		<br>
+		<label for="Second Name">Apellido:</label>
+		<input type="text" name="" size="40">
+	</form>
+
+	<!-- En esta última rule hemos podido cambiar a todos paragraph en color purple debido a la "presidence". Para deshacerlo, basta con eliminar la última rule. -->
+
+</body>
+</html>

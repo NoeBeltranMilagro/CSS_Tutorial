@@ -1,0 +1,32 @@
+<!-- La property "display: inline-block" contiene el tipo de posicionamiento del inline y del block al mismo tiempo. -->
+<!-- Como podemos ver, en el primero la box model se ajusta al texto (independientemente del tamaño indicado con la property "height"), en el segundo se ajusta al tamaño indicado y en el tercero se mezclan las dos partes (se intenta ajustar al texto pero también al tamaño indicado). -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.número1 {
+			background-color: brown;
+			height: 200px;
+			display: inline;
+		}
+
+		.número2 {
+			background-color: gold;
+			height: 200px;
+			display: block;
+		}
+
+		.número3 {
+			background-color: skyblue;
+			height: 200px;
+			display: inline-block;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Esto es una <span class="número1">PALABRA</span> sólo con inline</h1>
+	<h1>Esto es una <span class="número2">PALABRA</span> sólo con block</h1>
+	<h1>Esto es una <span class="número3">PALABRA</span> con ambos.</h1>
+</body>
+</html>

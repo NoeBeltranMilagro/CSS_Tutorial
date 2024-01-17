@@ -1,0 +1,44 @@
+<!-- El selector "body" sirve para cambiar todo lo escrito en los demás selectores de manera jerárquica. Es decir, todo lo que pongamos en "body" opacará a los demás selectores A NO SER QUE EN ÉSTOS SE ESPECIFIQUE UNA PROPERTY QUE CONTRADIGA LAS PROPERTIES DEL SELECTOR "BODY". En este último caso, TENDRÁ PRIORIDAD EL OTRO SELECTOR. A este concepto se le llama "overriding". Es decir, "sobrescribir".-->
+<!-- El atributo "class" sirve para identificar uno o varios tags de forma específica. Esto nos permite editar únicamente los que tengan el mismo nombre. Funciona como el atributo "name". Una vez tenemos el "class" en el tag, lo podemos editar desde el tag "style" poniendo el tipo de tag y seguidamente introduciendo ".nombre que le hayas puesto". Por ejemplo: <h1 class="hola"> Buenos días </h1>. Y desde "style" ponemos h1 .hola -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+				color: black;
+		}
+
+		h1 {
+			border-bottom: 1px solid black;	
+		}
+
+		h2 {
+			border: 1px solid black;
+		}
+
+		p.skyblue {
+			color: skyblue;
+			font-size: 25px;
+			font-family: Helvetica;
+		}		
+
+		p.gold {
+			color: gold;
+			font-size: 25px;
+			font-family: Helvetica;
+		}		
+
+	</style>
+
+	<title> My HTML web page </title>
+</head>
+
+<body>
+	<h1> HTML web page </h1>
+	<p class="skyblue"> This is a HTML web page. </p>
+	<h2> Stuff about HTML </h2>
+	<p class="gold"> HTML is all about web pages. </p>
+</body>
+
+</html>

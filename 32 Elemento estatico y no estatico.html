@@ -1,0 +1,56 @@
+<!-- A la hora de posicionar elementos, pueden ser de dos tipos: Estáticos y no estáticos. La diferencia es que LOS ELEMENTOS ESTÁTICOS SON LOS ELEMENTOS EN EL FLOW y los ELEMENTOS NO ESTÁTICOS SON LOS QUE NO ESTÁN EN EL FLOW (como ocurre con los elementos con posición relative o absolute). -->
+<!-- La property "position: relative" sirve para posicionar un elemento TENIENDO EN CUENTA EL ELEMENTO ESTÁTICO MÁS CERCANO A ÉSTE. -->
+<!-- La property "position: absolute" sirve para posicionar un elemento TENIENDO EN CUENTA EL ELEMENTO NO ESTÁTICO MÁS CERCANO A ÉSTE. En una página web no solemos poner muchos elementos no estáticos, así que la mayoría de las veces el elemento con una position absolute tomará como referencia en las medidas al propio navegador. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: #9c9f84;
+		}
+
+		#div1 {
+			background-color: #e5e4d7;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.relative {
+			position: relative;
+			top: 20px;
+			color: brown;
+		}
+
+		#div2 {
+			position: relative;
+			background-color: #e5e4d7;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.absolute {
+			position: absolute;
+			bottom: 5px;
+			right: 20px;
+			color: brown;
+		}
+	</style>	
+</head>
+<body>
+	<div id="div1">
+	<h1>Esto no lo muevo</h1>
+	<h1>Esto tampoco</h1>
+	<h1>Esto como que tampoco</h1>
+	<h1 class="relative">Este sí que lo he movido, pero con la property "position: relative"</h1>
+	</div>
+
+	<div id="div2">
+	<h1>Esto no lo muevo</h1>
+	<h1>Esto tampoco</h1>
+	<h1>Esto como que tampoco</h1>
+	<h1 class="absolute">Este lo he movido con la property "position: absolute" y la property "position: relative" en el div.</h1>
+	</div>
+</body>
+</html>

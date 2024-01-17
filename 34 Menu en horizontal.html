@@ -1,0 +1,54 @@
+<!-- Éste es un ejemplo de un menú en horizontal. -->
+<!-- La property "text-decoration" no se puede heredar, por eso lo ponemos directamente dentro del a (anchor). -->
+<!-- La property "vertical-align" posiciona EL TEXTO que esté dentro de un div. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#barra ul {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			text-align: center;
+		}
+
+		#barra {
+			background-color: darkgreen;
+			height: 35px;
+			font-size: 25px;
+			font-weight: bold;
+			font: Tahoma; 
+			height: 60px;
+		}
+
+		#barra li {
+			display: inline;
+			padding: 15px;
+			vertical-align: middle;
+		}
+
+		#barra a {
+			text-decoration: none;
+			padding: 8px 8px 8px 8px;
+			color: white;
+			vertical-align: middle;
+		}
+
+		#barra a:hover {
+			color: black;
+			background-color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="barra">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Links</a></li>
+			<li><a href="">Forum</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</div>
+</body>
+</html>

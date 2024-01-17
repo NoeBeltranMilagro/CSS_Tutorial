@@ -1,0 +1,33 @@
+<!-- La property "text-shadow" sirve para ponerle una sombra el texto. -->
+<!-- En text1, le hemos puesto 3px en horizontal, 3px en vertical y 5px de nublado (hacerlo borroso). -->
+<!-- También podemos poner varias sombras de un solo texto, como ocurre en text2. -->
+<!-- Al igual que ocurre con la property "linear-gradient", podemos combinar la property "text-shadow" con la property "opacity", que es representada con una "a" junto al "rgb". -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.text1 {
+			font: bold 60px helvetica;
+			text-shadow: 3px 3px 5px orange
+		}
+
+		.text2 {
+			font: bold 60px helvetica;
+			text-shadow: 3px 3px 5px orange, 6px 6px 10px blue;
+		}
+		
+		.text3 {
+			font: bold 60px helvetica;
+			text-shadow: 3px 3px 5px rgba(255,4,14,0.7)
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="text1">Some text</h1>
+	<br>
+	<h1 class="text2">Some more text</h1>
+	<br>
+	<h1 class="text3">Man, stop writing</h1>
+</body>
+</html>

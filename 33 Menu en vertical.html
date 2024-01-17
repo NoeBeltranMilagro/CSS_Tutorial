@@ -1,0 +1,59 @@
+<!-- Podemos hacer un menú en vertical con todo lo que hemos aprendido anteriormente y crearlo a nuestro gusto. Para que funcione, necesitamos únicamente el tag "a" (anchor) con una ruta y un texto para que nos lleve al lugar definido. -->
+
+<!-- La property "list style: none" Elimina el estilo de la lista (en este caso, los puntos de una "unorganized list"). -->
+
+<!-- Eliminamos el "padding" y el "margin" en la rule "ul" (unorganized list) pero que no afecten en el posicionamiento del menú. -->
+
+<!-- La rule "ul li a" es una ruta. Es decir, que hemos especificado un camino que van a seguir las properties dentro de esta rule (del "ul" al "li" y del "li" al "a"). No es necesario poner toda la ruta (en vez de poner solamente en a, en este caso) aunque es recomendable hacerlo, para que sepamos fácilmente su localización en el código. -->
+
+<!-- La property "text-decoration: none" elimina la decoración del texto. En este caso, el subrayado que aparece en un "anchor" de forma predeterminada (en un enlace). -->
+
+<!-- La property "text-align" posiciona el texto en la posición indicada DENTRO DEL BOX MODEL. -->
+
+<!-- La property "width" ajusta la ANCHURA de la box model. -->
+
+<!-- La property "height" ajusta la ALTURA de la box model. -->
+
+<!-- La property "line-height" posiciona la ALTURA DEL TEXTO dentro de la box model. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li a {
+			text-decoration: none;
+			font-family: Calibri;
+			background-color: #5c755e;
+			color: white;
+			display: block;
+			width: 80px;
+			height: 25px;
+			margin: 5px;
+			padding: 10px;
+			border: 1px solid brown;
+			border-radius: 2px;
+			text-align: center;
+			line-height: 25px;
+		}
+
+		ul li a:hover {
+			background-color: #d3d3d3;
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">Links</a></li>
+		<li><a href="">Forum</a></li>
+		<li><a href="">About</a></li>
+	</ul>
+</body>
+</html>

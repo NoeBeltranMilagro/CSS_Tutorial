@@ -1,0 +1,38 @@
+<!-- El "not selector" sirve para EXCLUIR UN SELECTOR indicado. -->
+<!-- En este ejemplo, si utilizo el "not selector" en el h1 y utilizo la property "color: brown", todos los demás selectores se pondrán de color marrón MENOS EL QUE HEMOS INDICADO CON EL "not selector". En este caso, el selector h1. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1 {
+			color: darkgreen;
+		}
+
+		h2 {
+			color: gold;
+		}
+
+		h3 {
+			color: skyblue;
+		}
+
+		p {
+			color: yellow;
+		}
+
+		:not(h2) {
+			color: brown;
+		}
+	</style>	
+</head>
+
+<body>
+	<h1>Ta</h1>
+
+	<h2>Te</h2>
+
+	<h3>To</h3>
+
+	<p>Tu</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- Los ajustes de los margins, paddings y borders se pueden hacer en una misma property, como se muestra en el ejemplo. El orden es: arriba, derecha, abajo, izquierda.-->
+<!-- los márgenes se pueden ajustar automáticamente si en el valor escribimos "auto". Para que surta efecto, hay que utilizar la property "display: block". podemos ajustar en "auto" para todos los lados (margin: auto) o cada uno de forma independiente (margin-left: auto, margin-right: auto, margin-top: auto y margin-bottom: auto). -->
+<!-- Si escribimos "0" en el valor de la porperty "margin", padding o border-width, se eliminarán los márgenes, rellenos o bordes del texto. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		p.paragraph1 {
+			background-color: gold;
+			font-size: 24px;
+			border: black 2px solid;
+			padding: 20px 20px 20px 70px;
+			margin: 30px,30px,30px,70px;
+		}
+		
+		p.paragraph2 {
+			background-color: gold;
+			font-size: 24px;
+			padding: 5px;
+			border-color: black;
+			border-width: 6px;
+			border-style: solid;
+			margin: auto;
+		}
+
+		p.paragraph3 {
+			background-color: grey;
+			font-size: 24px;
+			padding: 5px;
+			border-color: skyblue;
+			border-width: 0px;
+			border-style: solid;
+			margin: 0;
+		}
+		
+		img.image1 {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="paragraph1"> En este texto, si le ponemos un color de fondo, podremos ver que la caja que rodea a &eacute;ste. </p>
+	<p class="paragraph2"> Como ves, podemos ajustar el margen para acercar o alejar ambos textos entre s&iacute;. </p>
+	<p class="paragraph2"> Por cierto, mira qu&eacute; pedazo de dibujo que tengo aqu&iacute; abajo. </p>
+	<p class="paragraph3"> Si utilizo el valor 0, los m&aacute;rgenes desapareceren. </p>
+	<img class="image1" src="cyrodiil-recortada.JPEG">
+</body>
+</html>

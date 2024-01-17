@@ -1,0 +1,60 @@
+<!-- Este es estilo de formulario que podemos hacer. Se pueden hacer de varias formas, pero ésta es la óptima. -->
+<!-- La property "display: table" crea un posicionamiento similar al de una tabla. -->
+<!-- La property "display: table-row" crea un posicionamiento similar al de una fila. -->
+<!-- La property "display: table-cell" crea un posicionamiento similiar al de las celdas (las celdas de Excel, por ejemplo). Crea un posicionamiento perfectamente alineado. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#theForm {
+			color: white;
+			display: table;
+			padding: 15px;
+			background-color: #2C8F77;
+			border: solid 2px black;
+		}
+
+		.row {
+			display: table-row;
+		}
+
+		.row label {
+			display: table-cell;
+			padding: 2px;
+			text-align: right;
+		}
+
+		.row input {
+			display: table-cell;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Fill the information below and hit the summit button below.</h2>
+	<form id="theForm" action="" method="">
+		<p>
+			<div class="row">
+				<label for="name">Name: </label>
+				<input type="text" id="name" name=""><br> <br>
+			</div>
+
+			<div class="row">
+				<label for="address">Address: </label>
+				<input type="text" id="address" name=""><br> <br>
+			</div>
+
+			<div class="row">
+				<label for="phone">Phone: </label>
+				<input type="tel" id="phone" name=""><br> <br>
+			</div>
+
+			<div class="row">
+				<label for="email">Email: </label>
+				<input type="email" id="email" name=""><br> <br>
+			</div>
+		</p>
+	</form>
+</body>
+</html>

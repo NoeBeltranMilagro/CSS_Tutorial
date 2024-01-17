@@ -1,0 +1,100 @@
+<!-- El "nth-child selector" es un sudo selector (todos los sudo selector se escriben con un ":", igual que ocurre el sudo selector para los links) que selecciona los elementos indicados DEFINIENDO UN PATRÓN. Puede ser un patrón par (even), impar (odd), por un elemento en concreto (el número del elemento en cuestión en la fila), por un elemento en concreto por patrón (el número de los elementos en cuestión) o por un elemento en concreto empezando por uno indicado (el número de los elementos en cuestión + el número del elemento desde el que empieza). -->
+
+<!-- Este selector sirve para SELECCIONAR DISTINTOS ELEMENTOS MEDIANTE ARGUMENTOS. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.par p:nth-child(even) {
+			color: brown;
+		}
+
+		.impar p:nth-child(odd) {
+			color: skyblue;
+		}
+
+		.numero p:nth-child(2) {
+			color: gold;
+		}
+
+		.numeroporpatron p:nth-child(3n) {
+			color: green;
+		}
+
+		.numeroporposicion p:nth-child(3n + 2) {
+			color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="par">
+		<p>Here's some text.</p>
+		<p>More here.</p>
+		<p>Here's some too.</p>
+		<p>Some more.</p>
+		<p>Ok one more.</p>
+		<p>Stop.</p>
+		<p>Stop man.</p>
+		<p>That's enough.</p>
+		<p>Ok whatever.</p>
+		<p>I'll go to sleep. Call me when you've done.</p>
+	</div>
+	<br>
+	<br>
+	<div class="impar">
+		<p>Here's some text.</p>
+		<p>More here.</p>
+		<p>Here's some too.</p>
+		<p>Some more.</p>
+		<p>Ok one more.</p>
+		<p>Stop.</p>
+		<p>Stop man.</p>
+		<p>That's enough.</p>
+		<p>Ok whatever.</p>
+		<p>I'll go to sleep. Call me when you've done.</p>
+	</div>
+	<br>
+	<br>
+	<div class="numero">
+		<p>Here's some text.</p>
+		<p>More here.</p>
+		<p>Here's some too.</p>
+		<p>Some more.</p>
+		<p>Ok one more.</p>
+		<p>Stop.</p>
+		<p>Stop man.</p>
+		<p>That's enough.</p>
+		<p>Ok whatever.</p>
+		<p>I'll go to sleep. Call me when you've done.</p>
+	</div>
+	<br>
+	<br>
+	<div class="numeroporpatron">
+		<p>Here's some text.</p>
+		<p>More here.</p>
+		<p>Here's some too.</p>
+		<p>Some more.</p>
+		<p>Ok one more.</p>
+		<p>Stop.</p>
+		<p>Stop man.</p>
+		<p>That's enough.</p>
+		<p>Ok whatever.</p>
+		<p>I'll go to sleep. Call me when you've done.</p>
+	</div>
+	<br>
+	<br>
+	<div class="numeroporposicion">
+		<p>Here's some text.</p>
+		<p>More here.</p>
+		<p>Here's some too.</p>
+		<p>Some more.</p>
+		<p>Ok one more.</p>
+		<p>Stop.</p>
+		<p>Stop man.</p>
+		<p>That's enough.</p>
+		<p>Ok whatever.</p>
+		<p>I'll go to sleep. Call me when you've done.</p>
+	</div>
+</body>
+</html>

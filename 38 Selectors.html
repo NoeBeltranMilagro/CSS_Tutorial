@@ -1,0 +1,98 @@
+<!-- Los selectores nos permiten meter elemementos HTML dentro del apartado CSS para editarlos. Hay varios tipos de selectores. -->
+
+<!-- El "type selector" selecciona un tag. -->
+
+<!-- El "combine selector" selecciona varios elementos en una sola rule. -->
+
+<!-- El "class selector" selecciona un class. -->
+
+<!-- El "ID selector" selecciona un ID. -->
+
+<!-- El "descendant selector" selecciona un elemento dentro de otro elemento. Útil cuando quieres seleccionar un elemento en concreto dentro de elementos nested.-->
+
+<!-- El "child selector" es similiar al descendant selector. La diferencia es que el "child selector" sólo puede seleccionar EL PRIMER HIJO EN LA JERARQUÍA y el "descendant selector puede seleccionar VARIOS HIJOS Y CUALQUIERA DE ELLOS DENTRO DEL PADRE, INDEPENDIENTEMENTE DE LA POSICIÓN DENTRO DE LA JERARQUÍA". Útil cuando sólo quieres seleccionar el primer hijo en la jerarquía. -->
+
+<!-- El "adjacent sibling selector" selecciona EL SIGUIENTE HIJO DE LA JERARQUÍA INDICANDO EL ANTERIOR. En vez de indicar el padre como en el "child selector", podemos indicar cualquier hijo de la jerarquía, con tal que haya otro detrás de éste. Útil para seleccionar uno de los hijos sin necesidad de utilizar el "descendant selector". -->
+
+<!-- El "general sibling selector" selecciona TODOS LOS HIJOS POSTERIORES AL HIJO INDICADO. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1 {
+			color: magenta;
+		}
+
+		p, b, .b {
+			color:skyblue;
+		}
+
+		.class {
+			color: gold;
+		}
+
+		#ID {
+			color: brown;
+		}
+
+		div h4 {
+			font-style: italic;
+		}
+
+		.child>b {
+			color: purple;
+		}
+
+		.childmal>p {
+			color: purple;
+		}
+
+		.sibling h2+h3 {
+			color: gold;
+		}
+
+		.generalsibling h2~p {
+			color: darkgreen;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<h1>Este es un "type selector".</h1>
+	<p>Este,</p>
+	<b>este</b><br>
+	<b class="b">y este funcionan combinando elementos. Es decir, "combine selector".</b>
+	<h2 class="class">Este es un "class selector".</h2>
+	<h3 ID="ID">Este es un "ID selector".</h3>
+	
+	<div>
+		<h4>Este es un "descendant selector"</h4>
+	</div>
+
+	<blockquote class="child">
+		<b>Esto es un "child selector".</b>
+	</blockquote>
+
+	<!-- Si utilizamos el child selector en un hijo menor no funcionará. Eso sólo podría funcionar eliminando el hijo anterior o utilizando el descendant selector. Por ejemplo: -->
+	<blockquote class="childmal">
+		<b>
+			<p>Esta vez no se va a poner de color morado aunque lo ordene porque va detrás del tag "b" en la jerarquía del tag "blockquote" en este caso.</p>
+		</b>
+	</blockquote>
+
+	<div class="sibling">
+		<h2>El hijo mayor</h2>
+		<p>ohio</p>
+		<h3>El hijo menor</h3>
+	</div>
+
+	<div class="generalsibling">
+		<h2>El "general sibling" puede seleccionar todos ellos si son del tipo. En este caso, son todos p.</h2>
+		<p>Soy una p</p>
+		<p>Y yo</p>
+		<p>Yo también</p>
+	</div>
+</body>
+</html>

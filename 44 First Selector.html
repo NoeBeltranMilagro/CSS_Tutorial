@@ -1,0 +1,33 @@
+<!-- El "first selector" es un sudo selector que sirve para seleccionar la primera letra, línea, párrafo, ect de un texto (normalmente). Este selector es bueno para empezar nuevos párrafos, remarcar líneas en un texto, etc. Los "first selector" son "::first-letter" y "::first line". -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#historia {
+			font-family: calibri;
+		}
+
+		p::first-letter {
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+			p::first-line {
+			color: brown;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="historia">
+		<h1>Una larga historia</h1>
+		<p>Esta es la historia de herman Stodrof, 
+		<br>
+		un muchacho proveniente de una pequeña aldea llamada Cierzo, rica el sal, pescado, olor a mar y una serie de tradiciones más que polémicas. El muchacho tenía quince años. Eres un chico robusto pero con rasgos afilados. tenía la tez blanca como el granito y unos largos cabellos dorados. Era hijo de uno de los hombres más prominentes de la aldea, Orlen Stodrof, más conocido como el "Caballero Errante".</p>
+		<br>
+		<p>Un día, todo cambió,
+		<br>
+		cuando su mejor amigo, Herslok, fue exiliado debido a una ley muy presente en la región de Quersoneso desde tiempos inmemoriares; el Pacto de Sangre.</p>
+	</div>
+</body>
+</html>

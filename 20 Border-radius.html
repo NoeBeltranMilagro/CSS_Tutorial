@@ -1,0 +1,39 @@
+<!-- La property "border-radius" nos permite redondear los bordes. -->
+<!-- EN ALGUNOS NAVEGADORES ANTIGUOS NO FUNCIONA. -->
+<!DOCTYPE  html>
+<html>
+<head>
+	<style>
+		h1 {
+			border-color: black;
+			border-width: thick;
+			border-style: solid;
+			border-radius: 14px;
+		}
+
+		h2 {
+			border-color: black;
+			border-width: medium;
+			border-style: solid;
+			border-top-left-radius: 14px;
+			border-top-right-radius: 14px;
+			border-bottom-left-radius: 14px;
+			border-bottom-right-radius: 14px;
+		}
+
+		h3{
+			border-color: black;
+			border-width: thin;
+			border-style: solid;
+			border-bottom-left-radius: 14px;
+			border-top-right-radius: 14px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1> Podemos redondear TODOS LOS LADOS del border, </h1>
+	<h2> redondear TODOS DE FORMA INDEPENDIENTE </h2>
+	<h3> o redondear ÚNICAMENTE LOS QUE QUERAMOS. </h3>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- El la property "font", cuando ponemos un número sin especificar (como el número 700 que aparece en el ejemplo), nos referimos a la INTENSIDAD DE LA LETRA EN NEGRITA. -->
+
+<!-- La property "line-height" nos permite ajustar la altura del elemento DENTRO DE LA BOX MODEL. Es decir, que si no determinamos una altura (height) en la box model, NO FUNCIONARÁ BIEN. -->
+
+<!-- Poner dos dígitos en el padding nos permite ajustar al tamaño del padding arriba y abajo (primer dígito) o derecha e izquierda (segundo dígito). Si ponemos solo un dígito se ajustará el tamaño en todos los lados (como solemos hacer). -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.button {
+			background: #e7e7e7;
+			border: 1px solid;
+			border-radius: 3px;
+			font: 700 13px Helvetica, Arial;
+			height: 60px;
+			line-height: 30px;
+			padding: 0 20px;
+			text-align: center;
+			margin-right: 10px;
+			box-sizing: border-box; 
+		}
+
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+
+		li {
+			display: inline;
+		}
+
+		a {
+			color: #666;
+			text-decoration: none;
+			float: left;
+		}
+
+		a:hover {
+			color: #000;
+			background-color:#dadada;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li><a class="button" href="">Home</a></li>
+		<li><a class="button" href="">Links</a></li>
+		<li><a class="button" href="">Forum</a></li>
+		<li><a class="button" href="">About</a></li>
+	</ul>
+</body>
+</html>

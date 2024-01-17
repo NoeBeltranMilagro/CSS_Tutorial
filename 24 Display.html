@@ -1,0 +1,35 @@
+<!-- Dependiendo de la posición, todos los elementos en una página pueden ser en "block" o en "inline". -->
+<!-- Los de tipo "block" ocupan toda la página de izquierda a derecha, independientemente del tamaño de este elemento. -->
+<!-- Los de tipo "inline" ocupan el tamaño justo que tiene el elemento (margen, borde, relleno, etc. Se ajustará del tamaño del elemento SI NO ESPECIFICAMOS NINGUNA DE LAS PROPERTY ANTERIORES COMO MARGEN, BORDE, RELLENO, ETC). No ocupan de izquierda a derecha de la página como ocurre con los block. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.image3 {
+			display: block;
+		}
+
+		h2 {
+			background-color: #8A9A5B;
+			border-color: black;
+			border-style: solid;		
+		}
+
+		h3 {
+			background-color: #8A9A5B;
+			border-color: black;
+			border-style: solid;
+		}
+	</style>
+</head>
+
+<body>
+	<img class="image1" src="cyrodiil-recortada.JPEG">
+	<img class="image2" src="cyrodiil-recortada.JPEG">
+	<img class="image3" src="cyrodiil-recortada.JPEG">
+	<img class="image4" src="cyrodiil-recortada.JPEG">
+	<h2>Se puede cambiar el tipo del elemento si utilizamos la property "display". En este caso utilizamos "display: block;". De esta forma, la imagen 3 se vuelve block.</h2>
+	<h3>Por ejemplo, este h3 es "inline", por eso ocupa el tamaño justo (como podemos ver, los m&aacutergenes se ajustan por completo al tamaño del texto).</h3>
+</body>
+</html>
+

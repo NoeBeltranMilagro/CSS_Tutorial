@@ -1,0 +1,52 @@
+<!-- La property "float" sirve para posicionar un elemento a la izquierda o a la derecha de la página web, independiente de si es de tipo block o inline. -->
+<!-- Para posicionar los elementos de una forma más manual, es recomendable utilizar la property float y ajustar la box model de cada elemento con la property "width". -->
+<!-- La property "width" nos permite ajustar el tamaño del bloque del elemento. En el caso de las imágenes, TODA LA IMAGEN EN UNA BOX MODEL, es decir, que una imagen ocupa todo el espacio del contenido, padding, borde y margen. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.h1 {
+			background-color: gold;
+			float: left;
+		}
+
+		.h2 {
+			background-color: skyblue;
+			float: right;
+		}
+
+		.h3 {
+			background-color: brown;
+			width: 50%;
+			float: left;
+		}
+
+		.h4 {
+			background-color: #8A9A5B;
+			width: 50%;
+			float: right;
+		}
+
+		.h5 {
+			background-color: gold;
+			float: left;
+		}
+
+		.h6 {
+			background-color: skyblue;
+			float: left;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<h2 class="h1">La property "float" posicionará el elemento en el lado que especifiquemos.</h2>
+	<h2 class="h2">En este ejemplo, hemos puesto un float en cada tag para que cada uno esté en un extremo.</h2>
+	<h2 class="h3">Se puede ajustar el tamaño que ocupe el bloque del texto con la property width.</h2>
+	<h2 class="h4">En este caso, hemos hecho lo mismo que en el primer ejemplo, pero utilizando un width para ocupar el 50% de la página y que queden perfectamente alineados.</h2>
+	<h2 class="h5">Si le ponemos a ambos un float a la izquierda, </h2>
+	<h2 class="h6">Rellenerán el espacio restante en el centro automáticamente.</h2>
+</body>
+</html>
